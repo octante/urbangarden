@@ -14,7 +14,7 @@ compatibility, all project components are maintained under
 
 ## 1.0
 
-First version of urban gardens site must have a basic administration for users and a first version of frontend, where users can share his gardens photos, posts, calendars and so on. To get it we need to focus in two basic pillars, administration and frontend.
+First milestion of urban gardens site must have a basic administration for users and a first version of frontend, where users can share his gardens photos, posts, calendars and so on. To get it we need to focus in two basic pillars, administration and frontend.
 
 MVP administration
 
@@ -42,7 +42,7 @@ MVP frontend
 	
 ## 2.0
 
-In second version we will add calendar support. With this resource users can put events in the calendar.
+Second milestone will add calendar support. With this resource users can put events in the calendar.
 This calendar may be public or private.
 
 Administration
