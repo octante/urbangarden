@@ -39,5 +39,23 @@ MVP frontend
 - [ ] Blog posts:
 	- [ ] Show a list of posts
 	- [ ] Show a page with post with all available data.
+	
+## 2.0
+
+In second version we will add calendar support. With this resource users can put events in the calendar.
+This calendar may be public or private.
+
+Administration
+
+- [ ] Calendar
+	- [ ] Activate calendar
+	- [ ] Manage calendar privacity (public or private)
+	- [ ] Manage calendar events
+		- [ ] Create an event
+		- [ ] Modify an event
+		- [ ] Remove an event
+
+Frontend
+
 - [ ] Calendars
 	- [ ] Show a user calendar with all events (only for public calendars)
