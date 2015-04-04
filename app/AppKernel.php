@@ -18,7 +18,6 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Urban\BlogBundle\UrbanBlogBundle(),
             new Urban\CalendarBundle\UrbanCalendarBundle(),
-            new Admin\AppBundle\AdminAppBundle(),
             new Front\AppBundle\FrontAppBundle(),
         );
 
