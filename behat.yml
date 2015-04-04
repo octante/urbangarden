@@ -1,0 +1,15 @@
+default:
+    suites:
+        huerto:
+            type: symfony_bundle
+            bundle: UrbanBlogBundle
+            contexts:
+                - Urban\BlogBundle\Features\Context\FeatureContext:
+                    simpleArg: 'string'
+                    session: '@session'
+    extensions:
+          Behat\Symfony2Extension: ~
+          Behat\MinkExtension:
+              sessions:
+                  my_session:
+                      symfony2: ~
