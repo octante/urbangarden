@@ -1,4 +1,0 @@
-services:
-#    urban_blog.example:
-#        class: Urban\BlogBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]

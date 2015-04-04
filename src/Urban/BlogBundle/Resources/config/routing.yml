@@ -1,3 +1,0 @@
-urban_blog_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: UrbanBlogBundle:Default:index }
