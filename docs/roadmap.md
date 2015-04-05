@@ -20,7 +20,8 @@ administration and frontend.
 
 MVP:
 
-- [ ] Search and install a free template. This templates needs to have a timeline - look&feel.
+- [x] Search and install a free template. This templates needs to have a timeline - look&feel.
+    - Chosen solution has been a basic layout with http://bootswatch.com/spacelab/ styles
 - [ ] User register.
     - [ ] With own register page.
 - [ ] Build a logo.
