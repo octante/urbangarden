@@ -6,6 +6,6 @@ urban_calendar:
     resource: "@UrbanCalendarBundle/Resources/config/routing.yml"
     prefix:   /
 
-urban_blog:
-    resource: "@UrbanBlogBundle/Resources/config/routing.yml"
+urban_timeline:
+    resource: "@UrbanTimelineBundle/Resources/config/routing.yml"
     prefix:   /
