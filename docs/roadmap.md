@@ -14,27 +14,21 @@ compatibility, all project components are maintained under
 
 ## 1.0
 
-First milestion of urban gardens site must have a basic administration for users and a first version of frontend, where users can share his gardens photos, posts, calendars and so on. To get it we need to focus in two basic pillars, administration and frontend.
+First milestone of urban gardens site must have a basic administration for users and a first version of frontend,
+where users can share his gardens photos, posts, calendars and so on. To get it we need to focus in two basic pillars,
+administration and frontend.
 
-MVP administration
+MVP:
 
-- [ ] Install an administration template. Bootstrap template is a good option.
-- [ ] Basic login page and basic users authentication system.
-- [ ] Blog post administration:
-	- [ ] Insert a post.
-	- [ ] Modify a post.
-	- [ ] Delete a post.
-	- [ ] View all user posts list.
-
-MVP frontend
-
-- [ ] Search and install a free template. This templates needs to have a blog - look&feel.
+- [ ] Search and install a free template. This templates needs to have a timeline - look&feel.
+- [ ] User register.
+    - [ ] With own register page.
 - [ ] Build a logo.
 - [ ] Build a home with some basic resources. We can begin with:
 	- [ ] List of latest registered users.
-	- [ ] Latest posts.
+	- [ ] Latest updates.
 - [ ] Define the urls.
-	- [ ] Urls for blogs: For example: /jackjohnson/blog and /johnjackson/blog.
+	- [ ] Urls for timelines: For example: /jackjohnson/timeline and /johnjackson/timeline.
 	- [ ] Urls for public calendars: For example: /jackjohnson/calendar and /johnjackson/calendar.
 - [ ] Blog posts:
 	- [ ] Show a list of posts
@@ -45,17 +39,7 @@ MVP frontend
 Second milestone will add calendar support. With this resource users can put events in the calendar.
 This calendar may be public or private.
 
-Administration
-
-- [ ] Calendar
-	- [ ] Activate calendar
-	- [ ] Manage calendar privacity (public or private)
-	- [ ] Manage calendar events
-		- [ ] Create an event
-		- [ ] Modify an event
-		- [ ] Remove an event
-
-Frontend
-
+- [ ] User register.
+    - [ ] With facebook.
 - [ ] Calendars
 	- [ ] Show a user calendar with all events (only for public calendars)
