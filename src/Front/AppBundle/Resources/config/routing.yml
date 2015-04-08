@@ -1,3 +1,11 @@
 front_app_homepage:
     path:     /
-    defaults: { _controller: FrontAppBundle:Default:index }
+    defaults: { _controller: FrontAppBundle:Home:index }
+
+front_app_signup:
+    path:     /signup
+    defaults: { _controller: FrontAppBundle:Signup:signup }
+
+front_app_signup_success:
+    path:     /signup_success
+    defaults: { _controller: FrontAppBundle:Signup:signupSuccess }

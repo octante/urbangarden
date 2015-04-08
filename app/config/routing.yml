@@ -1,5 +1,13 @@
+admin_app:
+    resource: "@AdminAppBundle/Resources/config/routing.yml"
+    prefix:   /admin
+
 front_app:
     resource: "@FrontAppBundle/Resources/config/routing.yml"
+    prefix:   /
+
+urban_user:
+    resource: "@UrbanUserBundle/Resources/config/routing.yml"
     prefix:   /
 
 urban_calendar:

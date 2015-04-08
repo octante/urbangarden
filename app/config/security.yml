@@ -1,7 +1,20 @@
 security:
+    encoders:
+        Urban\UserBundle\Entity\User:
+            algorithm: sha512
+            encode-as-base64: true
+            iterations: 10
+
+    role_hierarchy:
+        ROLE_ADMIN:       ROLE_USER
+        ROLE_SUPER_ADMIN: [ROLE_USER, ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
+
     providers:
         in_memory:
             memory: ~
+        users_db:
+            entity: { class: Urban\UserBundle\Entity\User, property: password }
+
 
     firewalls:
         dev:
@@ -10,3 +23,17 @@ security:
 
         default:
             anonymous: ~
+
+        login:
+            pattern:  ^/demo/secured/login$
+            security: false
+
+        secured_area:
+            pattern:    ^/
+            anonymous: ~
+            form_login:
+                check_path: /login_check
+                login_path: /login
+            logout:
+                path:   /logout
+                target: /
