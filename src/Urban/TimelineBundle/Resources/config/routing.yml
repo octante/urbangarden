@@ -1,0 +1,3 @@
+urban_timeline_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: UrbanTimelineBundle:Default:index }

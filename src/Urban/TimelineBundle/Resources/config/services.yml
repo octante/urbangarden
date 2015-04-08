@@ -1,0 +1,4 @@
+services:
+#    urban_timeline.example:
+#        class: Urban\TimelineBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
