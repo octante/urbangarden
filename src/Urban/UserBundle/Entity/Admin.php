@@ -8,11 +8,16 @@
  * file that was distributed with this source code.
  */
 
-namespace Urban\UserBundle\Repository;
+namespace Urban\UserBundle\Entity;
 
 
-use Doctrine\ORM\EntityRepository;
-
-class UserRepository extends EntityRepository
+class Admin extends UserAbstract
 {
-} 
+    /**
+     * @inheritdoc
+     */
+    public function getRoles()
+    {
+        return array('ROLE_ADMIN');
+    }
+}

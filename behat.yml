@@ -1,14 +1,17 @@
 default:
     suites:
-        huerto:
-            type: symfony_bundle
-            bundle: UrbanBlogBundle
+        urbangarden:
             contexts:
-                - Urban\BlogBundle\Features\Context\FeatureContext:
-                    simpleArg: 'string'
+                - Behat\MinkExtension\Context\MinkContext
+                - Urban\UserBundle\Behat\Context\FeatureContext:
                     session: '@session'
     extensions:
-          Behat\Symfony2Extension: ~
+          Behat\Symfony2Extension:
+              kernel:
+                  path: app/AppKernel.php
+                  class: AppKernel
+                  env: test
+                  debug: false
           Behat\MinkExtension:
               sessions:
                   my_session:

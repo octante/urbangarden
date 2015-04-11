@@ -5,28 +5,31 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+
+                {% if error %}
+                    <div>-->{{ last_username}} - {{ error.messageKey }} - {{ error.message }}</div>
+                {% endif %}
+
                 <div class="well bs-component">
                     {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
 
                     {{ form_errors(form) }}
 
                     <div class="form-group">
-                        {{ form_row(form.email, {
+                        {{ form_row(form._username, {
                             'attr': {
                                 'class': 'col-lg-10',
-                                'placeholder': 'Email',
-                                'name': 'email'
+                                'placeholder': 'Email'
                                 },
                             'label_attr': {'class': 'col-lg-2 control-label'}
                             })
                         }}
                     </div>
                     <div class="form-group">
-                        {{ form_row(form.password, {
+                        {{ form_row(form._password, {
                             'attr': {
                                 'class': 'col-lg-10',
-                                'placeholder': 'Contraseña',
-                                'name': 'password'
+                                'placeholder': 'Contraseña'
                                 },
                             'label_attr': {'class': 'col-lg-2 control-label'}
                             })

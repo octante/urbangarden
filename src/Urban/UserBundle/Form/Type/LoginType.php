@@ -15,9 +15,9 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 /**
- * Class RegisterType
+ * Class LoginType
  */
-class RegisterType extends AbstractType
+class LoginType extends AbstractType
 {
     /**
      * Sets data class
@@ -42,16 +42,17 @@ class RegisterType extends AbstractType
         parent::buildForm($builder, $options);
         $builder
             ->setMethod('POST')
-            ->add('email', 'text', [
+            ->setAction('/login_check')
+            ->add('_username', 'text', [
                 'required' => true,
                 'label' => false
             ])
-            ->add('password', 'password', [
+            ->add('_password', 'password', [
                 'required' => true,
                 'label' => false
             ])
             ->add('send', 'submit', [
-                'label' => 'Enviar',
+                'label' => 'Entrar'
             ]);
     }
     /**
@@ -61,6 +62,6 @@ class RegisterType extends AbstractType
      */
     public function getName()
     {
-        return 'urbangarden_user_form_type_register';
+        return 'urbangarden_user_form_type_login';
     }
 }

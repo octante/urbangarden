@@ -1,4 +1,7 @@
 <?php
+
+namespace Urban\UserBundle\Behat\Context;
+
 /*
  * This file is part of the UrbanGarden package.
  *
@@ -8,11 +11,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Urban\UserBundle\Repository;
+use Symfony\Component\HttpFoundation\Session\Session;
 
-
-use Doctrine\ORM\EntityRepository;
-
-class UserRepository extends EntityRepository
+class FeatureContext extends AbstractFeatureContext
 {
-} 
+    public function __construct(Session $session) {
+
+    }
+
+}

@@ -1,11 +1,5 @@
 Urban\UserBundle\Entity\User:
     properties:
-        username:
-            - Length:
-                min: 5
-                minMessage: Mínimo 5 carácteres
-            - NotBlank:
-                message: El nombre de usuario es obligatorio
         email:
             - Email:
                 message: El email no es válido

@@ -24,10 +24,6 @@ Urban\UserBundle\Entity\User:
         isActive:
             column: is_active
             type: boolean
-        username:
-            column: username
-            type: string
-            nullable: false
         name:
             column: name
             type: string

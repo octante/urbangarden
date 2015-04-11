@@ -25,6 +25,13 @@ class SignupController extends Controller
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $user->setCreatedAt(new \Datetime());
+
+            $factory = $this->get('security.encoder_factory');
+
+            $encoder = $factory->getEncoder($user);
+            $password = $encoder->encodePassword($user->getPassword(), $user->getSalt());
+            $user->setPassword($password);
+
             $em->persist($user);
             $em->flush();
 
