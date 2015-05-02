@@ -10,8 +10,7 @@
 
 namespace Urban\UserBundle\Entity;
 
-
-class User extends UserAbstract
+class User extends AbstractUser
 {
     /**
      * @inheritdoc

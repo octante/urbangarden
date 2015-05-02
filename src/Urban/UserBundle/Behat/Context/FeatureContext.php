@@ -13,10 +13,9 @@ namespace Urban\UserBundle\Behat\Context;
 
 use Symfony\Component\HttpFoundation\Session\Session;
 
-class FeatureContext extends AbstractFeatureContext
+class FeatureContext extends UserAbstractFeatureContext
 {
     public function __construct(Session $session) {
 
     }
-
 }

@@ -16,6 +16,6 @@ class HomeController extends Controller
      */
     public function indexAction()
     {
-
+        return $this->render('FrontAppBundle:Home:index.html.twig');
     }
 }

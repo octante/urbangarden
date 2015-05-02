@@ -8,16 +8,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Urban\UserBundle\Entity;
+namespace Front\AppBundle\Behat\Context;
+
+use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
 
-class Admin extends AbstractUser
+class FrontContext extends AbstractFeatureContext
 {
-    /**
-     * @inheritdoc
-     */
-    public function getRoles()
-    {
-        return array('ROLE_ADMIN');
-    }
 }
