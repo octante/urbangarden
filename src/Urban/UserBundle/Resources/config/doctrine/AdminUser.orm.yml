@@ -1,7 +1,7 @@
-Urban\UserBundle\Entity\User:
+Urban\UserBundle\Entity\AdminUser:
     type: entity
-    repositoryClass: Urban\UserBundle\Repository\UserRepository
-    table: user
+    repositoryClass: Urban\UserBundle\Repository\AdminUserRepository
+    table: admin_user
     id:
         id:
             type: integer
@@ -14,6 +14,7 @@ Urban\UserBundle\Entity\User:
         updatedAt:
             column: updated_at
             type: datetime
+            nullable: true
         password:
             column: password
             type: string
@@ -28,9 +29,11 @@ Urban\UserBundle\Entity\User:
         name:
             column: name
             type: string
+            nullable: true
         surname:
             column: surname
             type: string
+            nullable: true
         email:
             column: email
             type: string

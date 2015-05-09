@@ -5,7 +5,7 @@ default:
                 - Behat\MinkExtension\Context\MinkContext
                 - Urban\UserBundle\Behat\Context\FeatureContext:
                     session: '@session'
-                - Front\AppBundle\Behat\Context\FrontContext
+                - Urban\Behat\Context\DoctrineContext
     extensions:
           Behat\Symfony2Extension:
               kernel:

@@ -1,0 +1,17 @@
+services:
+
+    #
+    # Factories
+    #
+
+    #
+    # Factory for entity admin
+    #
+    urbangarden.factory.admin:
+        class: Urban\UserBundle\Factory\AdminUserFactory
+
+    #
+    # Factory for entity user
+    #
+    urbangarden.factory.user:
+        class: Urban\UserBundle\Factory\UserFactory
