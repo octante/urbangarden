@@ -1,0 +1,7 @@
+services:
+    urbangarden.repository.user:
+        class: Urban\UserBundle\Repository\UserRepository
+        factory_service: doctrine.orm.default_entity_manager
+        factory_method: getRepository
+        arguments:
+            - Urban\UserBundle\Entity\User

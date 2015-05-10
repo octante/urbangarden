@@ -22,3 +22,9 @@ Feature: Admin login
     Given I am logged as "homersimpson@fox.us" - "123456"
     Then I am on "/admin"
     Then I should see "Page Header"
+
+  @wip
+  Scenario: As a logged user I can see my email in administration page
+    Given I am logged as "homersimpson@fox.us" - "123456"
+    Then I am on "/admin"
+    Then I should see "Homer"
