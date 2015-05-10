@@ -28,9 +28,11 @@ Urban\UserBundle\Entity\User:
         name:
             column: name
             type: string
+            nullable: true
         surname:
             column: surname
             type: string
+            nullable: true
         email:
             column: email
             type: string

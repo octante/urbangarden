@@ -39,7 +39,7 @@ security:
                 password_parameter: urbangarden_user_form_type_login[_password]
             logout:
                 path:   /admin/logout
-                target: /admin
+                target: /admin/
 
         admin:
             anonymous: ~
@@ -51,4 +51,4 @@ security:
                 password_parameter: urbangarden_user_form_type_login[_password]
             logout:
                 path:   /admin/logout
-                target: /admin
+                target: /admin/
