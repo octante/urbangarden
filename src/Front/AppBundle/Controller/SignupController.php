@@ -17,7 +17,7 @@ class SignupController extends Controller
      */
     public function signupAction(Request $request)
     {
-        $user = new User();
+        $user = $this->get('urbangarden.factory.user')->create();
         $form = $this->createForm(new RegisterType(), $user);
 
         $form->handleRequest($request);

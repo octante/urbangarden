@@ -62,7 +62,6 @@ abstract class AbstractFeatureContext
 
     /**
      *
-     * /**
      * Get url generator
      *
      * @return UrlGeneratorInterface Url generator

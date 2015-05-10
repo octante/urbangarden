@@ -86,6 +86,8 @@ abstract class AbstractUser
     public function setUpdatedAt()
     {
         $this->updatedAt = new \Datetime();
+
+        return $this;
     }
 
     /**
@@ -102,6 +104,8 @@ abstract class AbstractUser
     public function setCreatedAt($createdAt)
     {
         $this->createdAt = $createdAt;
+
+        return $this;
     }
 
     /**
@@ -118,6 +122,8 @@ abstract class AbstractUser
     public function setEmail($email)
     {
         $this->email = $email;
+
+        return $this;
     }
 
     /**
@@ -134,6 +140,8 @@ abstract class AbstractUser
     public function setId($id)
     {
         $this->id = $id;
+
+        return $this;
     }
 
     /**
@@ -150,6 +158,8 @@ abstract class AbstractUser
     public function setIsActive($isActive)
     {
         $this->isActive = $isActive;
+
+        return $this;
     }
 
     /**
@@ -166,6 +176,8 @@ abstract class AbstractUser
     public function setLastLogin($lastLogin)
     {
         $this->lastLogin = $lastLogin;
+
+        return $this;
     }
 
     /**
@@ -182,6 +194,8 @@ abstract class AbstractUser
     public function setName($name)
     {
         $this->name = $name;
+
+        return $this;
     }
 
     /**
@@ -198,6 +212,8 @@ abstract class AbstractUser
     public function setSurname($surname)
     {
         $this->surname = $surname;
+
+        return $this;
     }
 
     /**
@@ -222,6 +238,8 @@ abstract class AbstractUser
     public function setPassword($password)
     {
         $this->password = $password;
+
+        return $this;
     }
 
     /**

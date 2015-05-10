@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of the UrbanGarden package.
  *
@@ -10,12 +11,11 @@
 
 namespace Urban\UserBundle\Behat\Context;
 
+use Urban\Behat\Context\AbstractFeatureContext;
 
-use Admin\AppBundle\Behat\Context\AbstractFeatureContext;
-
-class UserAbstractFeatureContext
-    extends AbstractFeatureContext
+class UserAbstractFeatureContext extends AbstractFeatureContext
 {
+
     /**
      * @Given /^I am logged as "(?P<username>[^"]*)" - "(?P<password>[^"]*)"$/
      * @When /^I log in as "(?P<username>[^"]*)" - "(?P<password>[^"]*)"$/

@@ -1,6 +1,15 @@
 <?php
 
-namespace Admin\AppBundle\Behat\Context;
+/*
+ * This file is part of the UrbanGarden package.
+ *
+ * (c) Issel Guberna <issel.guberna@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Urban\Behat\Context;
 
 /*
  * This file is part of the UrbanGarden package.
@@ -87,22 +96,5 @@ abstract class AbstractFeatureContext
         return $this
             ->getUrlGenerator()
             ->generate($routeName, $routeParameters);
-    }
-
-    /**
-     * @Given /^In admin, I am logged as "(?P<username>[^"]*)" - "(?P<password>[^"]*)"$/
-     * @When /^In admin, I log in as "(?P<username>[^"]*)" - "(?P<password>[^"]*)"$/
-     */
-    public function inAdminIAmLoggedAs($username, $password)
-    {
-        $this->visitPath('/admin/login');
-
-        $page = $this
-            ->getSession()
-            ->getPage();
-
-        $page->fillField('elcodi_admin_user_form_type_login_email', $username);
-        $page->fillField('elcodi_admin_user_form_type_login_password', $password);
-        $page->pressButton('submit-login');
     }
 }
