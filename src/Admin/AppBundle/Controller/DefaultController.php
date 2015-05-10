@@ -8,11 +8,8 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        $userData = $this->get('security.token_storage')->getToken()->getUser();
-
         return $this->render(
-            'AdminAppBundle:Default:index.html.twig',
-            array('user' => $userData)
+            'AdminAppBundle:Default:index.html.twig'
         );
     }
 }
