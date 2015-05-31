@@ -6,5 +6,9 @@ admin_app_user_profile:
     path:     /profile
     defaults: { _controller: AdminAppBundle:UserProfile:edit }
 
+admin_calendar_view:
+    path:     /calendar
+    defaults: { _controller: AdminAppBundle:Calendar:index }
+
 logout:
     path:   /logout
