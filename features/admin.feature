@@ -27,4 +27,5 @@ Feature: Admin login
   Scenario: As a logged user I can see my email in administration page
     Given I am logged as "homersimpson@fox.us" - "123456"
     Then I am on "/admin"
-    Then I should see "Homer"
+    #Then I should see "Followers"
+    #Then I want to debug "/admin"

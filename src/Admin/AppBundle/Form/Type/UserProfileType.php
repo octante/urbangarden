@@ -8,16 +8,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Urban\UserBundle\Form\Type;
+namespace Admin\AppBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
-/**
- * Class RegisterType
- */
-class RegisterType extends AbstractType
+class UserProfileType extends AbstractType
 {
     /**
      * Sets data class
@@ -40,18 +37,16 @@ class RegisterType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         parent::buildForm($builder, $options);
+
         $builder
             ->setMethod('POST')
-            ->add('email', 'text', [
+            ->setAction('/admin/profile')
+            ->add('email', 'email', [
                 'required' => true,
-                'label' => false
-            ])
-            ->add('password', 'password', [
-                'required' => true,
-                'label' => false
+                'label' => 'Email'
             ])
             ->add('send', 'submit', [
-                'label' => 'Enviar',
+                'label' => 'Guardar'
             ]);
     }
     /**
@@ -61,6 +56,6 @@ class RegisterType extends AbstractType
      */
     public function getName()
     {
-        return 'urbangarden_user_form_type_register';
+        return 'urbangarden_user_form_type_user_profile';
     }
 }

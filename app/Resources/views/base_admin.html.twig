@@ -176,7 +176,7 @@
                         <!-- Menu Footer-->
                         <li class="user-footer">
                             <div class="pull-left">
-                                <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                <a href="profile" class="btn btn-default btn-flat">Profile</a>
                             </div>
                             <div class="pull-right">
                                 <a href="/admin/logout" class="btn btn-default btn-flat">Sign out</a>
@@ -244,19 +244,24 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Page Header
-            <small>Optional description</small>
+            {% block h1 %}
+
+            {% endblock %}
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-            <li class="active">Here</li>
+
+            {% block breadcrumb %}
+
+            {% endblock %}
         </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
 
-        <!-- Your Page Content Here -->
+        {% block content %}
+
+        {% endblock %}
 
     </section><!-- /.content -->
 </div><!-- /.content-wrapper -->

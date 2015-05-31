@@ -1,0 +1,60 @@
+{% extends "base_admin.html.twig" %}
+
+{% block h1 %}
+    User profile
+{% endblock %}
+
+{% block breadcrumb %}
+    <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li class="active">User Profile</li>
+{% endblock %}
+
+{% block content %}
+
+    {% for noticeMessage in app.session.flashbag.get('notice') %}
+        <div class="alert alert-success alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <h4><i class="icon fa fa-check"></i>{{ noticeMessage }}</h4>
+        </div>
+    {% endfor %}
+    {% for errorMessage in app.session.flashbag.get('error') %}
+        <div class="alert alert-danger alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <h4><i class="icon fa fa-check"></i>{{ errorMessage }}</h4>
+        </div>
+    {% endfor %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-10">
+                <div class="box box-primary">
+                    <div class="box-header"></div>
+                    {{ form_start(form) }}
+                        <div class="box-body">
+
+                            {{ form_errors(form) }}
+
+                            <div class="form-group">
+                                {{ form_row(form.email, {
+                                        'attr': {
+                                            'class': 'form-control',
+                                            'placeholder': 'Email'
+                                        }
+                                    })
+                                }}
+                            </div>
+
+                            {{ form_widget(form.send, {
+                                'attr': {
+                                    'class': 'btn btn-primary'
+                                }
+                                })
+                            }}
+                        </div>
+                    {{ form_end(form) }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

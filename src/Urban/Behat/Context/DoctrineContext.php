@@ -47,7 +47,7 @@ class DoctrineContext extends AbstractFeatureContext
             '--env'            => 'test',
             '--no-interaction' => true,
             '--force'          => true,
-            '--quiet'          => false,
+            '--quiet'          => true,
         ]));
 
         if ($doctrineConnection->isConnected()) {
@@ -58,7 +58,7 @@ class DoctrineContext extends AbstractFeatureContext
             'command'          => 'doctrine:database:create',
             '--env'            => 'test',
             '--no-interaction' => true,
-            '--quiet'          => false,
+            '--quiet'          => true,
         ]));
 
         $this->application->run(new ArrayInput([
@@ -71,7 +71,7 @@ class DoctrineContext extends AbstractFeatureContext
         $this->application->run(new ArrayInput([
             'command'          => 'doctrine:fixtures:load',
             '--env'            => 'test',
-            '--no-interaction' => false,
+            '--no-interaction' => true,
             '--fixtures'       => $this->kernel->getRootDir() . '/../src/Urban/Fixtures',
             '--quiet'          => true,
         ]));

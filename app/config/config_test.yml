@@ -24,6 +24,6 @@ doctrine:
         user:                 "%database_user%"
         password:             "%database_password%"
         driver:               "%database_driver%"
-        path:                 /vagrant/urbangarden.sqlite
+        path:                 /tmp/urbangarden.sqlite
         logging:              "%kernel.debug%"
         memory:               true

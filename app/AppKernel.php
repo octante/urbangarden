@@ -41,7 +41,7 @@ class AppKernel extends Kernel
 
     public function getCacheDir()
     {
-        if (in_array($this->environment, array('dev', 'test'))) {
+        if (in_array($this->environment, array('dev'))) {
             return '/dev/shm/urbangarden/cache/' .  $this->environment;
         }
 
@@ -50,7 +50,7 @@ class AppKernel extends Kernel
 
     public function getLogDir()
     {
-        if (in_array($this->environment, array('dev', 'test'))) {
+        if (in_array($this->environment, array('dev'))) {
             return '/dev/shm/urbangarden/logs';
         }
 

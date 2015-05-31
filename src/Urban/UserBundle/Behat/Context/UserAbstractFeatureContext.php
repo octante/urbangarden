@@ -32,4 +32,18 @@ class UserAbstractFeatureContext extends AbstractFeatureContext
         $page->fillField('urbangarden_user_form_type_login__password', $password);
         $page->pressButton('urbangarden_user_form_type_login_send');
     }
+
+    /**
+     * @Then /^I want to debug "(?P<page>[^"]*)"$/
+     */
+    public function IWantToDebug($page)
+    {
+        $this->visitPath($page);
+
+        $page = $this
+            ->getSession()
+            ->getPage();
+
+        echo $page->getContent();
+    }
 } 

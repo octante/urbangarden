@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Urban\UserBundle\Form\Type;
+namespace Front\AppBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -40,6 +40,7 @@ class LoginType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         parent::buildForm($builder, $options);
+
         $builder
             ->setMethod('POST')
             ->setAction('/login_check')

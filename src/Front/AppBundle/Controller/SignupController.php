@@ -5,7 +5,7 @@ namespace Front\AppBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Urban\UserBundle\Entity\User;
-use Urban\UserBundle\Form\Type\RegisterType;
+use Front\AppBundle\Form\Type\RegisterType;
 
 class SignupController extends Controller
 {

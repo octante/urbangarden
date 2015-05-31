@@ -3,8 +3,7 @@
 namespace Front\AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Urban\UserBundle\Entity\User;
-use Urban\UserBundle\Form\Type\LoginType;
+use Front\AppBundle\Form\Type\LoginType;
 
 class LoginController extends Controller
 {
@@ -29,7 +28,7 @@ class LoginController extends Controller
         return $this->render(
             'FrontAppBundle:Login:login.html.twig',
             array(
-                'form' => $form->createView(),
+                'form'          => $form->createView(),
                 'last_username' => $lastUsername,
                 'error'         => $error,
             )

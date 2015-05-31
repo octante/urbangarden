@@ -2,5 +2,9 @@ admin_app_homepage:
     path:     /
     defaults: { _controller: AdminAppBundle:Default:index }
 
+admin_app_user_profile:
+    path:     /profile
+    defaults: { _controller: AdminAppBundle:UserProfile:edit }
+
 logout:
     path:   /logout

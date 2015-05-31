@@ -30,9 +30,10 @@ class UserData extends AbstractFixture
             ->setEmail('homersimpson@fox.us');
 
         $factory = $this->container->get('security.encoder_factory');
+        echo "crea usuari";
 
         $encoder = $factory->getEncoder($user);
-        $password = $encoder->encodePassword('123456', '');
+        $password = $encoder->encodePassword('123456', $user->getSalt());
         $user->setPassword($password);
 
         $manager->persist($user);

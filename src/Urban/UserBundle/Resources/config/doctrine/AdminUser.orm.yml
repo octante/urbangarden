@@ -38,6 +38,7 @@ Urban\UserBundle\Entity\AdminUser:
             column: email
             type: string
             nullable: false
+            unique: true
 
     lifecycleCallbacks:
         preUpdate: [setUpdatedAt]
